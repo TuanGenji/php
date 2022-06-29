@@ -13,7 +13,7 @@
 include'connect.php';
 
 
-$trang = $_GET['?trang'];
+$trang = $_GET['trang'];
 
 $sql_so_tin_tuc = "select count(*) from tin_tuc";
 $mang_so_tin_tuc = mysqli_query($ket_noi,$sql_so_tin_tuc);
@@ -84,7 +84,7 @@ $ket_qua = mysqli_query($ket_noi,$sql);
 
 </table>
 <?php for($i = 1; $i <= $so_trang; $i++){ ?>
-	<a href="?trang=<?php echo $i ?>">
+	<a href="?trang=<?php echo $i ?>&tim_kiem=<?php echo $tim_kiem ?>">
 
 		<?php echo $i ?>
 	</a>
