@@ -31,7 +31,7 @@ $tim_kiem = '';
 
 if(isset($_GET['tim_kiem'])){
 	 $tim_kiem = $_GET['tim_kiem'];
-	 }
+}
 	 $sql = "select * from tin_tuc
 	 where
 	 tieu_de like '%$tim_kiem%'
